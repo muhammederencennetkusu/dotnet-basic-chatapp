@@ -1,47 +1,47 @@
 Bu proje, .NET ve SignalR kullanılarak geliştirilmiş temel bir chat uygulamasıdır. Proje, kullanıcıların gerçek zamanlı olarak sohbet etmelerini sağlamak için SignalR'ı kullanırken SQL veritabanında verilerini saklar. Bu README dosyası, projenin genel yapısını, gereksinimlerini ve kurulumu hakkında bilgiler sunmaktadır.
+<br>
+📝 Özellikler<br>
+Gerçek Zamanlı Mesajlaşma: SignalR ile hızlı ve düşük gecikmeli iletişim.<br>
+Kullanıcı Yönetimi: Her kullanıcının oturum açması gerekir.<br>
+Mesaj Depolama: Gönderilen ve alınan mesajlar SQL veritabanında saklanır.<br>
+Kullanıcı Dostu Arayüz: Temiz ve minimalist arayüz ile kullanım kolaylığı.<br>
+📌 Teknolojiler <br>
+Backend: .NET Core<br>
+Gerçek Zamanlı İletişim: SignalR<br>
+Veritabanı: SQL Server<br>
+Diğer: ASP.NET Core MVC<br>
+⚙️ Kurulum<br>
+Gereksinimler<br>
+.NET SDK 6.0 veya üstü<br>
+SQL Server (Express veya daha üst bir sürüm)<br>
+Git<br>
+Yükleme Adımları<br>
+Projeyi GitHub'dan klonlayın:<br>
 
-📝 Özellikler
-Gerçek Zamanlı Mesajlaşma: SignalR ile hızlı ve düşük gecikmeli iletişim.
-Kullanıcı Yönetimi: Her kullanıcının oturum açması gerekir.
-Mesaj Depolama: Gönderilen ve alınan mesajlar SQL veritabanında saklanır.
-Kullanıcı Dostu Arayüz: Temiz ve minimalist arayüz ile kullanım kolaylığı.
-📌 Teknolojiler
-Backend: .NET Core
-Gerçek Zamanlı İletişim: SignalR
-Veritabanı: SQL Server
-Diğer: ASP.NET Core MVC
-⚙️ Kurulum
-Gereksinimler
-.NET SDK 6.0 veya üstü
-SQL Server (Express veya daha üst bir sürüm)
-Git
-Yükleme Adımları
-Projeyi GitHub'dan klonlayın:
+bash<br>
+Kodu kopyala<br>
+git clone https://github.com/muhammederencennetkusu/dotnet-basic-chatapp<br>
+cd chatapp-projesi<br>
+Gerekli bağımlılıkları yükleyin:<br>
 
-bash
-Kodu kopyala
-git clone https://github.com/muhammederencennetkusu/dotnet-basic-chatapp
-cd chatapp-projesi
-Gerekli bağımlılıkları yükleyin:
+bash<br>
+Kodu kopyala<br>
+dotnet restore<br>
+SQL Server'da bir veritabanı oluşturun ve bağlantı bilgilerini appsettings.json dosyasına ekleyin.<br>
+<br>
+Veritabanı tablolarını oluşturmak için dotnet ef komutlarını çalıştırarak tabloları kurun:<br>
 
-bash
-Kodu kopyala
-dotnet restore
-SQL Server'da bir veritabanı oluşturun ve bağlantı bilgilerini appsettings.json dosyasına ekleyin.
+bash<br>
+Kodu kopyala<br>
+dotnet ef database update<br>
+Uygulamayı başlatın:<br>
 
-Veritabanı tablolarını oluşturmak için dotnet ef komutlarını çalıştırarak tabloları kurun:
+bash<br>
+Kodu kopyala<br>
+dotnet run<br>
+Tarayıcınızda http://localhost:5000 adresini açarak uygulamayı görüntüleyin.<br>
 
-bash
-Kodu kopyala
-dotnet ef database update
-Uygulamayı başlatın:
-
-bash
-Kodu kopyala
-dotnet run
-Tarayıcınızda http://localhost:5000 adresini açarak uygulamayı görüntüleyin.
-
-🚀 Kullanım
-Anasayfada oturum açarak veya kayıt olarak kullanıcı adı ile giriş yapın.
-Kullanıcı adı seçtikten sonra sohbet odasına katılabilir ve mesaj gönderebilirsiniz.
-Gönderilen mesajlar diğer kullanıcıların ekranlarında anında görünecektir.
+🚀 Kullanım<br>
+Anasayfada oturum açarak veya kayıt olarak kullanıcı adı ile giriş yapın.<br>
+Kullanıcı adı seçtikten sonra sohbet odasına katılabilir ve mesaj gönderebilirsiniz.<br>
+Gönderilen mesajlar diğer kullanıcıların ekranlarında anında görünecektir.<br>
