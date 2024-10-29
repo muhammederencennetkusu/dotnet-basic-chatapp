@@ -18,27 +18,22 @@ Git<br>
 Yükleme Adımları<br>
 Projeyi GitHub'dan klonlayın:<br>
 
-bash<br>
-Kodu kopyala<br>
-git clone https://github.com/muhammederencennetkusu/dotnet-basic-chatapp<br>
-cd chatapp-projesi<br>
+
+<b>git clone https://github.com/muhammederencennetkusu/dotnet-basic-chatapp</b><br>
+<b>cd chatapp-projesi</b><br>
 Gerekli bağımlılıkları yükleyin:<br>
 
-bash<br>
-Kodu kopyala<br>
-dotnet restore<br>
+<b>dotnet restore</b><br>
 SQL Server'da bir veritabanı oluşturun ve bağlantı bilgilerini appsettings.json dosyasına ekleyin.<br>
 <br>
 Veritabanı tablolarını oluşturmak için dotnet ef komutlarını çalıştırarak tabloları kurun:<br>
 
-bash<br>
-Kodu kopyala<br>
-dotnet ef database update<br>
+
+<b>dotnet ef database update</b><br>
 Uygulamayı başlatın:<br>
 
-bash<br>
-Kodu kopyala<br>
-dotnet run<br>
+
+<b>dotnet run</b><br>
 Tarayıcınızda http://localhost:5000 adresini açarak uygulamayı görüntüleyin.<br>
 
 🚀 Kullanım<br>
