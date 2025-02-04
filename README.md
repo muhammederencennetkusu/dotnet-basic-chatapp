@@ -1,69 +1,39 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>.NET Basic ChatApp</title>
-</head>
-<body>
-    <h1>.NET Basic ChatApp</h1>
-    <p>This project is a basic chat application developed using .NET and SignalR. It enables users to chat in real-time using SignalR while storing their data in an SQL database. This README file provides information about the project's structure, requirements, and installation.</p>
+This project is a basic chat application developed using .NET and SignalR. The project uses SignalR to allow users to chat in real time while storing its data in a SQL database. This README file provides information about the overall structure, requirements, and setup of the project. <br>
+📝 Features<br>
+Real-Time Messaging: Fast and low-latency communication with SignalR.<br>
+User Management: Each user must log in.<br>
+Message Storage: Sent and received messages are stored in SQL database.<br>
+User-Friendly Interface: Ease of use with a clean and minimalist interface.<br>
+📌 Technologies <br>
+Backend: .NET Core<br>
+Real-Time Communication: SignalR<br>
+Database: SQL Server<br>
+Other: ASP.NET Core MVC<br>
+⚙️ Installation<br>
+Requirements<br>
+.NET SDK 6.0 or later<br>
+SQL Server (Express or later)<br>
+Git<br>
+Installation Steps<br>
+Clone the project from GitHub:<br>
 
-    <h2>📝 Features</h2>
-    <ul>
-        <li><strong>Real-Time Messaging:</strong> Fast and low-latency communication using SignalR.</li>
-        <li><strong>User Management:</strong> Each user must log in to participate.</li>
-        <li><strong>Message Storage:</strong> Sent and received messages are stored in an SQL database.</li>
-        <li><strong>User-Friendly Interface:</strong> Clean and minimalist design for ease of use.</li>
-    </ul>
+<b>git clone https://github.com/muhammederencennetkusu/dotnet-basic-chatapp</b><br>
+<b>cd chatapp-projesi</b><br>
+Install the necessary dependencies:<br>
 
-    <h2>📌 Technologies</h2>
-    <ul>
-        <li><strong>Backend:</strong> .NET Core</li>
-        <li><strong>Real-Time Communication:</strong> SignalR</li>
-        <li><strong>Database:</strong> SQL Server</li>
-        <li><strong>Other:</strong> ASP.NET Core MVC</li>
-    </ul>
+<b>dotnet restore</b><br>
+Create a database in SQL Server and add the connection information to the appsettings.json file.<br>
+<br>
+Run the dotnet ef commands to create the database tables and set up the tables:<br>
 
-    <h2>⚙️ Installation</h2>
+<b>dotnet ef database update</b><br>
+Start the application:<br>
 
-    <h3>Requirements</h3>
-    <ul>
-        <li>.NET SDK 6.0 or higher</li>
-        <li>SQL Server (Express or higher)</li>
-        <li>Git</li>
-    </ul>
+<b>dotnet run</b><br>
+View the application by opening http://localhost:5000 in your browser.<br>
 
-    <h3>Installation Steps</h3>
-    <ol>
-        <li>Clone the project from GitHub:
-            <pre>```bash
-git clone https://github.com/muhammederencennetkusu/dotnet-basic-chatapp.git
-cd chatapp-projesi
-```</pre>
-        </li>
-        <li>Install the required dependencies:
-            <pre>```bash
-dotnet restore
-```</pre>
-        </li>
-        <li>Create a database in SQL Server and add the connection details to the <code>appsettings.json</code> file.</li>
-        <li>Set up the database tables using Entity Framework commands:
-            <pre>```bash
-dotnet ef database update
-```</pre>
-        </li>
-        <li>Run the application:
-            <pre>```bash
-dotnet run
-```</pre>
-        </li>
-        <li>Open your browser and navigate to <a href="http://localhost:5000">http://localhost:5000</a> to view the application.</li>
-    </ol>
-
-    <h2>🚀 Usage</h2>
-    <ul>
-        <li>On the homepage, log in or register with a username.</li>
-        <li>After selecting a username, join the chat room and start sending messages.</li>
-        <li>Messages sent will appear instantly on other users' screens.</li>
-    </ul>
-</body>
-</html>
+🚀 Usage<br>
+Log in with your username by logging in or registering on the homepage.<br>
+After choosing a username, you can join the chat room and send messages.<br>
+The messages sent are instantly displayed on other users' screens will appear.<br>
+translate this to English
